@@ -4,6 +4,8 @@ import styled from "styled-components";
 const PageDetailsContainer = styled.div`
   padding: 14px 80px;
   box-shadow: 0 0 5px rgba(0,0,0,.3);
+  position: relative;
+  z-index: 1;
 `;
 const BreadCrumbsContainer = styled.ul`
     list-style:  none;
@@ -45,8 +47,8 @@ const DetailsContainer = styled.div`
 const BreadCrumbs = ({ locations }) => (
   <BreadCrumbsContainer>
     {locations.map((item, indx) => (
-      <li>
-        <a href={item.url}>{`${item.pathname} ${
+      <li key={indx}>
+        <a href={item.url} style={{ textDecoration :  indx === locations.length - 1 ? 'underline' : 'none'}}>{`${item.pathname} ${
           indx !== locations.length - 1 ? ( "> ") : ''
         }`}</a>
       </li>

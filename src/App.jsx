@@ -1,13 +1,13 @@
-import GlobalStyles from "./GlobalStyles"
-import Orders from "./components/orders/Orders"
+import { useSelector } from "react-redux";
+import GlobalStyles from "./GlobalStyles";
+import Orders from "./components/orders/Orders";
 
 function App() {
-
   return (
-   <GlobalStyles>
-    <Orders/>
-   </GlobalStyles>
-  )
+    <GlobalStyles>
+      <Orders />
+    </GlobalStyles>
+  );
 }
 
-export default App
+export default App;

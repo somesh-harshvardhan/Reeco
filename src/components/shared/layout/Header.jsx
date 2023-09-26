@@ -31,6 +31,7 @@ justify-content: space-between;
 .cart{
   flex :1;
   position: relative;
+  margin-right: -100px;
   &-score{
     position: absolute;
     display: flex;
@@ -44,6 +45,7 @@ justify-content: space-between;
     border-radius: 50%;
     background-color: lightgreen;
     z-index: 1;
+  
   }
   &-icon{
     transform: rotateY(180deg);
