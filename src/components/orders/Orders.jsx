@@ -5,7 +5,7 @@ import Stats from './Stats'
 import OrdersTable from './OrdersTable'
 const ApproveOrderBtn = styled.button`
     padding: 8px 12px;
-    background-color: green;
+    background-color: var(--primary-green);
     color: white;
     border-radius: 22px;
     border: none;

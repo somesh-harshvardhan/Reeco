@@ -30,7 +30,7 @@ const DetailsContainer = styled.div`
         font-weight: 600;
     }
     .back-btn{
-        color: green;
+        color: var(--primary-green);
         border: 1px solid green;
         background: transparent;
         padding: 8px 12px;

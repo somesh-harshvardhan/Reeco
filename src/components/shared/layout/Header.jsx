@@ -1,10 +1,11 @@
 import styled from "styled-components"
 import {BsCart2} from 'react-icons/bs';
 import {MdKeyboardArrowDown} from 'react-icons/md'
+import { useSelector } from "react-redux";
 const NavContainer = styled.nav`
 display: flex;
 align-items: center;
-background-color: #004225;
+background-color: var(--primary-green);
 padding: 14px 80px;
 column-gap: 80px;
 color: white;
@@ -64,7 +65,8 @@ justify-content: space-between;
 const LOGO = ()=><h1 className="logo">Reeco</h1>
 
 const Header = () => {
-  const links = ["Store","Orders","Analytics"]
+  const links = ["Store","Orders","Analytics"];
+  const data = useSelector(state=>state.items)
   return (
     <NavContainer>
       <LOGO/>
@@ -74,7 +76,7 @@ const Header = () => {
         </div>
         <div className="cart">
           <BsCart2 className="cart-icon"/>
-          <div className="cart-score">17</div>
+          <div className="cart-score">{data.length}</div>
         </div>
         <div className="user">
             Hello, James <MdKeyboardArrowDown fontSize={20}/>

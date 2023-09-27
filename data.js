@@ -30,7 +30,7 @@ export const orderData = [{
     productImage : '/image/image.jpg',
     brand : 'Hormel Black Labelmany',
     price: 60,
-    quantity : 0,
+    quantity : 3,
     status : '',
     id : 1
 },
@@ -39,7 +39,7 @@ export const orderData = [{
     productImage : '/image/image.jpg',
     brand : 'Hormel Black Labelmany',
     price: 60,
-    quantity : 0,
+    quantity : 8,
     status : '',
     id : 2
 },
@@ -48,7 +48,7 @@ export const orderData = [{
     productImage : '/image/image.jpg',
     brand : 'Hormel Black Labelmany',
     price: 60,
-    quantity : 0,
+    quantity : 10,
     status : '',
     id : 3
 },
@@ -57,7 +57,7 @@ export const orderData = [{
     productImage : '/image/image.jpg',
     brand : 'Hormel Black Labelmany',
     price: 60,
-    quantity : 0,
+    quantity : 1,
     status : '',
     id : 4
 },{
@@ -65,7 +65,7 @@ export const orderData = [{
     brand : 'Hormel Black Labelmany',
     productImage : '/image/image.jpg',
     price: 60,
-    quantity : 0,
+    quantity : 7,
     status : '',
     id : 5
 }
